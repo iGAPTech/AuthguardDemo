@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row mt-5">
+      <div class="col-lg-5 p-4 mx-auto bg-light">
+          <div class="p-5">
+            <h2 class="text-center">Login</h2>
+              <form [formGroup]="formData" (ngSubmit)="btnLogin(formData.value)">
+                  <div class="mb-2">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control" formControlName="email" placeholder="Enter Email">
+                  </div>
+                  <div class="mb-2">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" formControlName="password" placeholder="Enter Password">
+                  </div>
+                  <div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+    </div>
+  </div>
